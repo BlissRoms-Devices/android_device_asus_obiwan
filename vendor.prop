@@ -110,3 +110,6 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
+
+# WiFi
+wifi.aware.interface=wifi-aware0
