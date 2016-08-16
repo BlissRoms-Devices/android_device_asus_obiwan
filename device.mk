@@ -292,6 +292,9 @@ PRODUCT_PACKAGES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Storage
+PRODUCT_CHARACTERISTICS := nosdcard
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
