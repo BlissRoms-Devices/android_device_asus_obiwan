@@ -119,6 +119,7 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # Keymaster
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
+ro.hardware.keystore_desede=true
 
 # Media
 debug.stagefright.ccodec=1
