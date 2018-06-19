@@ -178,3 +178,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+
+# Security
+BOOT_SECURITY_PATCH := 2022-06-05
+VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
