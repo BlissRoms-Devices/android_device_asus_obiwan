@@ -13,6 +13,9 @@ persist.vendor.dpm.feature=11
 # Display
 debug.sf.enable_hwc_vds=1
 
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
