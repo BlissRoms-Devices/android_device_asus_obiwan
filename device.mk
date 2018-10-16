@@ -14,6 +14,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
