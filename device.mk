@@ -335,3 +335,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
+
+# WFD
+PRODUCT_PACKAGES += \
+    libwfdaac_vendor
