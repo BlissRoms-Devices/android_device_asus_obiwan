@@ -107,6 +107,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Data
 PRODUCT_PACKAGES += \
+    IPACM_cfg.xml \
+    ipacm \
     librmnetctl
 
 # Camera
