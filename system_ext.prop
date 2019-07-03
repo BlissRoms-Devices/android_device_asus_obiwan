@@ -21,6 +21,9 @@ ro.media.recorder-max-base-layer-fps=60
 # Netmgr
 persist.vendor.data.mode=concurrent
 
+# QC Value Addons
+ro.vendor.qti.va_aosp.support=1
+
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 

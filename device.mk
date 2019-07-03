@@ -205,6 +205,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     goodix_9896_cfg_group.recovery
 
+# QMI
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
