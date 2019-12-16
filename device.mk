@@ -115,6 +115,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# GSI
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
