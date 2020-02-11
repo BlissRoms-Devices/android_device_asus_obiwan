@@ -119,6 +119,7 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
 
 # Keymaster
 ro.crypto.dm_default_key.options_format.version=2
