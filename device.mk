@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# Display
+PRODUCT_PACKAGES += \
+    FrameRateTile
+
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Inherit from asus sm8250-common
