@@ -47,6 +47,13 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     FrameRateTile
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/idc/goodix_ts.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/goodix_ts.idc \
+    $(LOCAL_PATH)/idc/goodix_ts_station.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/goodix_ts_station.idc \
+    $(LOCAL_PATH)/keychars/goodix_ts.kcm:$(TARGET_COPY_OUT_SYSTEM)/usr/keychars/goodix_ts.kcm \
+    $(LOCAL_PATH)/keylayout/goodix_ts.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/goodix_ts.kl
+
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Inherit from asus sm8250-common
