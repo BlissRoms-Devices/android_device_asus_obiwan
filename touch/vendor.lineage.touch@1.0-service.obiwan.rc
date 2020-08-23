@@ -1,0 +1,8 @@
+on boot
+    chown system system /proc/driver/gesture_type
+    chown system system /proc/driver/glove
+
+service vendor.touch-hal-1-0 /vendor/bin/hw/vendor.lineage.touch@1.0-service.obiwan
+    class hal
+    user system
+    group system

@@ -3,6 +3,8 @@ genfscon proc /driver/dualcam_cali    u:object_r:vendor_proc_camera:s0
 
 # Display
 genfscon proc /driver/dclick                                 u:object_r:vendor_proc_display:s0
+genfscon proc /driver/gesture_type                           u:object_r:vendor_proc_display:s0
+genfscon proc /driver/glove                                  u:object_r:vendor_proc_display:s0
 genfscon proc /lcd_stage                                     u:object_r:vendor_proc_display:s0
 genfscon proc /lcd_unique_id                                 u:object_r:vendor_proc_display:s0
 genfscon proc /localHbm                                      u:object_r:vendor_proc_display:s0

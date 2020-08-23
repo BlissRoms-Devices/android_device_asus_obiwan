@@ -18,5 +18,8 @@
 /dev/lsensor            u:object_r:sensors_device:s0
 /dev/psensor            u:object_r:sensors_device:s0
 
+# Touch
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.obiwan    u:object_r:hal_lineage_touch_default_exec:s0
+
 # Vibrator
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator\.service\.obiwan    u:object_r:hal_vibrator_default_exec:s0
