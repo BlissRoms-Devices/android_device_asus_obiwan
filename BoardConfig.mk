@@ -28,5 +28,8 @@ TARGET_KERNEL_CONFIG := vendor/obiwan_defconfig
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Recovery
+TARGET_RECOVERY_DEVICE_DIRS :=$(DEVICE_PATH)/recovery
+
 # inherit from the proprietary version
 -include vendor/asus/obiwan/BoardConfigVendor.mk
