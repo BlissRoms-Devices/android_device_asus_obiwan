@@ -599,6 +599,7 @@ vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmutils.so
 
 # Display (Pixelworks)
+-system/priv-app/AsusVisualMaster/AsusVisualMaster.apk
 vendor/bin/irisConfig
 vendor/etc/inparm/inparm_obiwan_pr/HDR_SCurve0810.png
 vendor/etc/inparm/inparm_obiwan_pr/inParm1.txt
