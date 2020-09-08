@@ -1,6 +1,6 @@
 # Asus build
-ro.vendor.build.asus.number=17.0823.2007.32-0
+ro.vendor.build.asus.number=17.0823.2007.58-0
 ro.vendor.build.asus.sku=WW
-ro.vendor.build.asus.version=17.0823.2007.32
-ro.vendor.build.fota.version=WW_I003D-17.0823.2007.32-0
-ro.vendor.build.software.version=17_0823_2007_32
+ro.vendor.build.asus.version=17.0823.2007.58
+ro.vendor.build.fota.version=WW_I003D-17.0823.2007.58-0
+ro.vendor.build.software.version=17_0823_2007_58
