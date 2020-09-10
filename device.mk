@@ -164,7 +164,6 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
-    lights.kona \
     memtrack.kona \
     vendor.display.config@1.0 \
     vendor.display.config@1.11.vendor \
@@ -240,6 +239,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.obiwan
 
 # Media
 PRODUCT_COPY_FILES += \
