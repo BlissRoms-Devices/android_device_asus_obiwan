@@ -1,0 +1,1 @@
+board=ASUS_I003_1
