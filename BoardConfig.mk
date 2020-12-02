@@ -22,11 +22,16 @@ DEVICE_PATH := device/asus/obiwan
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# Build
+BUILD_BROKEN_DUP_RULES := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/obiwan_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS :=$(DEVICE_PATH)/recovery

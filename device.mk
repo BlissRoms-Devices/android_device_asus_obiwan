@@ -22,8 +22,6 @@
 # definition file).
 #
 
-PRODUCT_TARGET_VNDK_VERSION := 29
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -35,9 +33,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_policy_configuration_ZS661KS.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/audio_policy_configuration_ZS661KS.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/audio_policy_volumes_ZS661KS.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_volumes_ZS661KS.xml
+    $(LOCAL_PATH)/audio/audio_policy_configuration_ZS661KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio_policy_configuration_ZS661KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio_policy_volumes_ZS661KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes_ZS661KS.xml
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -56,7 +54,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.asus_kona
+    vendor.lineage.touch@1.0-service.asus_kona
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -64,4 +62,4 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 $(call inherit-product, device/asus/sm8250-common/common.mk)
 
 # Inherit from vendor blobs
-#$(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
+$(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
