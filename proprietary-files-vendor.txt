@@ -128,7 +128,6 @@ vendor/bin/hw/android.hardware.authsecret@1.0-service-qti
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
-vendor/bin/hw/android.hardware.cas@1.1-service
 vendor/bin/hw/android.hardware.configstore@1.1-service
 vendor/bin/hw/android.hardware.contexthub@1.0-service
 vendor/bin/hw/android.hardware.drm@1.0-service
@@ -490,7 +489,6 @@ vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
-vendor/etc/init/android.hardware.cas@1.1-service.rc
 vendor/etc/init/android.hardware.configstore@1.1-service.rc
 vendor/etc/init/android.hardware.contexthub@1.0-service.rc
 vendor/etc/init/android.hardware.drm@1.0-service.rc
@@ -513,10 +511,6 @@ vendor/etc/init/dataadpl.rc
 vendor/etc/init/dataqti.rc
 vendor/etc/init/dpmQmiMgr.rc
 vendor/etc/init/hw/immvib.rc
-vendor/etc/init/hw/init.asus.usb.rc
-vendor/etc/init/hw/init.qcom.factory.rc
-vendor/etc/init/hw/init.qcom.rc
-vendor/etc/init/hw/init.target.rc
 vendor/etc/init/hw/init.target.wigig.rc
 vendor/etc/init/imsdatadaemon.rc
 vendor/etc/init/imsqmidaemon.rc
@@ -1089,9 +1083,7 @@ vendor/etc/usb_audio_policy_configuration.xml
 vendor/etc/usb_host_switch.sh
 vendor/etc/usb_pd_rt1715.sh
 vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
-vendor/etc/vintf/manifest/android.hardware.cas@1.1-service.xml
 vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
-vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
 vendor/etc/vintf/manifest/android.hardware.usb@1.1-service.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
 vendor/etc/wfdconfig_720.xml
@@ -2078,15 +2070,6 @@ vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
-vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so
-vendor/lib64/vendor.qti.hardware.display.allocator@3.0.so
-vendor/lib64/vendor.qti.hardware.display.composer@1.0.so
-vendor/lib64/vendor.qti.hardware.display.composer@2.0.so
-vendor/lib64/vendor.qti.hardware.display.composer@2.1.so
-vendor/lib64/vendor.qti.hardware.display.mapper@1.0.so
-vendor/lib64/vendor.qti.hardware.display.mapper@1.1.so
-vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
-vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.0.so
@@ -2439,7 +2422,6 @@ vendor/lib/libGPreqcancel_svc.so
 vendor/lib/libgps.utils.so
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libgsl.so
-vendor/lib/libgui_vendor.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
 vendor/lib/libhdcpsrm.so
@@ -2799,14 +2781,6 @@ vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so
 vendor/lib/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
-vendor/lib/vendor.qti.hardware.display.allocator@1.0.so
-vendor/lib/vendor.qti.hardware.display.allocator@3.0.so
-vendor/lib/vendor.qti.hardware.display.composer@1.0.so
-vendor/lib/vendor.qti.hardware.display.composer@2.0.so
-vendor/lib/vendor.qti.hardware.display.mapper@1.0.so
-vendor/lib/vendor.qti.hardware.display.mapper@1.1.so
-vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so
-vendor/lib/vendor.qti.hardware.display.mapperextensions@1.1.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib/vendor.qti.hardware.iop@1.0.so
 vendor/lib/vendor.qti.hardware.iop@2.0.so
