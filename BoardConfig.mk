@@ -36,5 +36,8 @@ TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS :=$(DEVICE_PATH)/recovery
 
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # inherit from the proprietary version
 -include vendor/asus/obiwan/BoardConfigVendor.mk

@@ -1,0 +1,4 @@
+# init.asus.user.rc
+typeattribute vendor_init data_between_core_and_vendor_violators;
+allow vendor_init system_data_file:lnk_file create_file_perms;
+allow vendor_init system_data_file:dir { write add_name remove_name read open ioctl setattr };
