@@ -151,6 +151,7 @@ vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/hw/vendor.qti.hardware.bluetooth_dun@1.0-service
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
@@ -552,6 +553,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.bluetooth_dun@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
@@ -1086,6 +1088,7 @@ vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
 vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
 vendor/etc/vintf/manifest/android.hardware.usb@1.1-service.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
+vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
 vendor/etc/wfdconfig_720.xml
 vendor/etc/wfdconfig_MI.xml
 vendor/etc/wfdconfig.xml
