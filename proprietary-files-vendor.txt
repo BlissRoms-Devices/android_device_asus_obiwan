@@ -1987,7 +1987,6 @@ vendor/lib64/libvpplibrary.so
 vendor/lib64/libvpptestutils.so
 vendor/lib64/libwapi_cert.so
 vendor/lib64/libwfdhdcpcp.so
-vendor/lib64/libwifi-hal.so
 vendor/lib64/libwigig_flashaccess.so
 vendor/lib64/libwigig_ftm_flows.so
 vendor/lib64/libwigig_pciaccess.so
