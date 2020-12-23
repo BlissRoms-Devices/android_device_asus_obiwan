@@ -21,6 +21,11 @@ VENDOR_SKIP_FILES_DEVICE=(
     "etc/audio_policy_configuration.xml"
     "etc/audio_policy_configuration_ZS661KS.xml"
 
+    # Demo
+    "etc/DemoContent.txt"
+    "etc/demo-video-screensaver.mp4"
+    "etc/md5CheckValue.md5"
+
     # SLA Dual Network
     "app/slaservice/slaservice.apk"
     "bin/hw/vendor.qti.sla.service@1.0-service"
