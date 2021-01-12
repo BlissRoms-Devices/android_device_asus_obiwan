@@ -24,6 +24,7 @@
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
+#include <vendor/goodix/hardware/biometrics/fingerprint/2.1/IGoodixFingerprintDaemon.h>
 
 namespace android {
 namespace hardware {
@@ -42,6 +43,7 @@ using ::android::hardware::Void;
 using ::android::hardware::hidl_vec;
 using ::android::hardware::hidl_string;
 using ::android::sp;
+using ::vendor::goodix::hardware::biometrics::fingerprint::V2_1::IGoodixFingerprintDaemon;
 
 struct BiometricsFingerprint : public IBiometricsFingerprint {
 public:
@@ -76,6 +78,7 @@ private:
 
     std::mutex mClientCallbackMutex;
     sp<IBiometricsFingerprintClientCallback> mClientCallback;
+    sp<IGoodixFingerprintDaemon> mGoodixFingerprintDaemon;
     fingerprint_device_t *mDevice;
 };
 

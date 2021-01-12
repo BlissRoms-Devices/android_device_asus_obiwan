@@ -46,6 +46,7 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
     if (!mDevice) {
         ALOGE("Can't open HAL module");
     }
+    this->mGoodixFingerprintDaemon = IGoodixFingerprintDaemon::getService();
 }
 
 BiometricsFingerprint::~BiometricsFingerprint() {
@@ -68,10 +69,16 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 }
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
+    this->mGoodixFingerprintDaemon->sendCommand(200001, {},
+                                                [](int, const hidl_vec<signed char>&) {});
+
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
+    this->mGoodixFingerprintDaemon->sendCommand(200003, {},
+                                                [](int, const hidl_vec<signed char>&) {});
+
     return Void();
 }
 
