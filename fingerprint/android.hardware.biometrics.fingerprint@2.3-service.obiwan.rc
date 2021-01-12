@@ -1,3 +1,6 @@
+on fs
+    chown system system /sys/devices/platform/goodix_ts.0/test_keycode
+
 service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.obiwan
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once

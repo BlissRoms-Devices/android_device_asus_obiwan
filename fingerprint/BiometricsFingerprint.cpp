@@ -30,6 +30,9 @@
 #define LOCAL_HBM_MODE "/proc/localHbm"
 #define LOCAL_HBM_ON "1"
 #define LOCAL_HBM_OFF "0"
+#define TEST_KEYCODE_PATH "/sys/devices/platform/goodix_ts.0/test_keycode"
+#define TEST_KEYCODE_KEY_F "33"
+#define TEST_KEYCODE_KEY_U "22"
 
 namespace android {
 namespace hardware {
@@ -87,12 +90,14 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
     mCmdQueue.push(200001);
     android::base::WriteStringToFile(LOCAL_HBM_ON, LOCAL_HBM_MODE);
+    android::base::WriteStringToFile(TEST_KEYCODE_KEY_F, TEST_KEYCODE_PATH);
     mCmdQueue.push(200002);
 
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
+    android::base::WriteStringToFile(TEST_KEYCODE_KEY_U, TEST_KEYCODE_PATH);
     android::base::WriteStringToFile(LOCAL_HBM_OFF, LOCAL_HBM_MODE);
     mCmdQueue.push(200003);
 
