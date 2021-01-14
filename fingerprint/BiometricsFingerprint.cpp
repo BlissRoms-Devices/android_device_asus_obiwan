@@ -18,12 +18,17 @@
 
 #include <hardware/hw_auth_token.h>
 
+#include <android-base/file.h>
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
 
 #include <inttypes.h>
 #include <unistd.h>
+
+#define LOCAL_HBM_MODE "/proc/localHbm"
+#define LOCAL_HBM_ON "1"
+#define LOCAL_HBM_OFF "0"
 
 namespace android {
 namespace hardware {
@@ -71,11 +76,15 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
     this->mGoodixFingerprintDaemon->sendCommand(200001, {},
                                                 [](int, const hidl_vec<signed char>&) {});
+    android::base::WriteStringToFile(LOCAL_HBM_ON, LOCAL_HBM_MODE);
+    this->mGoodixFingerprintDaemon->sendCommand(200002, {},
+                                                [](int, const hidl_vec<signed char>&) {});
 
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
+    android::base::WriteStringToFile(LOCAL_HBM_OFF, LOCAL_HBM_MODE);
     this->mGoodixFingerprintDaemon->sendCommand(200003, {},
                                                 [](int, const hidl_vec<signed char>&) {});
 
