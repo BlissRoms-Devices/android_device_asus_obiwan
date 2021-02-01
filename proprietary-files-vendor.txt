@@ -269,6 +269,7 @@ vendor/bin/qti
 vendor/bin/qwesd
 vendor/bin/qwes_test
 vendor/bin/read_battery_id_status
+vendor/bin/ReInsWDKey
 vendor/bin/repartition.sh
 vendor/bin/RestoreCalibrationData
 vendor/bin/rmt_storage
@@ -1301,7 +1302,6 @@ vendor/firmware/q6_ZS661KS_sm8250_image/adsp.b16
 vendor/firmware/q6_ZS661KS_sm8250_image/adsp.b17
 vendor/firmware/q6_ZS661KS_sm8250_image/adsp.b18
 vendor/firmware/q6_ZS661KS_sm8250_image/adsp.b19
-vendor/firmware/q6_ZS661KS_sm8250_image/adsp.b20
 vendor/firmware/q6_ZS661KS_sm8250_image/adsp.mdt
 vendor/firmware/regdb.bin
 vendor/firmware/rog2_haptic/rog2_100.bin
