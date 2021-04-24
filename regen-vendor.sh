@@ -15,6 +15,13 @@
 # limitations under the License.
 #
 
+_output_file=$2
+function header() {
+    sed -i "1s|^|$1\n|" $_output_file
+}
+
+BUILD_FINGERPRINT=$(grep BUILD_FINGERPRINT lineage_obiwan.mk | cut -d\" -f2)
+
 VENDOR_SKIP_FILES_DEVICE=(
     # Audio configs
     "etc/audio/audio_policy_configuration.xml"
@@ -87,3 +94,5 @@ VENDOR_SKIP_FILES_DEVICE=(
 )
 
 . ../sm8250-common/regen-vendor.sh "$@"
+
+header "# All blobs, unless pinned, are extracted from:\n# $BUILD_FINGERPRINT"

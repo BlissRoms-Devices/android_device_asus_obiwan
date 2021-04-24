@@ -29,12 +29,14 @@ BUILD_BROKEN_DUP_RULES := true
 TARGET_KERNEL_CONFIG := vendor/obiwan_defconfig
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS :=$(DEVICE_PATH)/recovery
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2021-09-01
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
