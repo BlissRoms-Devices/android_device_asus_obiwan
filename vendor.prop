@@ -146,6 +146,9 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
 
+# SoC
+ro.soc.manufacturer=QTI
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
