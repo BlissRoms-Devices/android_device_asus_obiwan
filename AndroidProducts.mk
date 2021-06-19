@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_obiwan.mk
+    $(LOCAL_DIR)/bliss_obiwan.mk
 
 COMMON_LUNCH_CHOICES := \
-    carbon_obiwan-user \
-    carbon_obiwan-userdebug \
-    carbon_obiwan-eng
+    bliss_obiwan-user \
+    bliss_obiwan-userdebug \
+    bliss_obiwan-eng

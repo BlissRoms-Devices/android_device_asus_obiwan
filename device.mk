@@ -53,7 +53,7 @@ PRODUCT_COPY_FILES += \
 
 # Lineage Permissions
 PRODUCT_COPY_FILES += \
-    vendor/carbon/prebuilt/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/bliss/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
