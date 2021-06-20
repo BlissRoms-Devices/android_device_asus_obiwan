@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/asus/obiwan/device.mk)
 
-# Inherit bliss GSM telephony parts
-#$(call inherit-product, vendor/bliss/config/gsm.mk)
-
 # Inherit bliss product configuration
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := obiwan
