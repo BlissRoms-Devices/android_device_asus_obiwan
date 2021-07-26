@@ -1,5 +1,6 @@
 # Adreno
 ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
 
 # Audio
 aaudio.hw_burst_min_usec=2000
