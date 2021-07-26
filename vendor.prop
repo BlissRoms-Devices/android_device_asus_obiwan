@@ -96,6 +96,9 @@ vendor.display.enable_posted_start_dyn=1
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
 # Graphics
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
