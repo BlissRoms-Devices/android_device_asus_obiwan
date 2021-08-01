@@ -13,12 +13,14 @@ AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
     boot \
     dtbo \
+    odm \
     product \
     recovery \
     system \
     system_ext \
     vbmeta \
-    vbmeta_system
+    vbmeta_system \
+    vendor
 
 # AVB
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
@@ -114,7 +116,7 @@ TARGET_MODULE_ALIASES := \
     wsa_macro_dlkm.ko:audio_wsa_macro.ko
 
 # Partitions
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6438256640
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_SUPER_PARTITION_SIZE := 12884901888
@@ -124,8 +126,12 @@ BOARD_DTBOIMG_PARTITION_SIZE := 0x1800000
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x6400000
 
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
+TARGET_COPY_OUT_ODM := odm
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
