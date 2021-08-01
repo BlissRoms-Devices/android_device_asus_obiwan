@@ -15,7 +15,9 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 # Namespaces
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    kernel/asus/sm8250
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
