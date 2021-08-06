@@ -270,6 +270,9 @@ PRODUCT_PACKAGES += \
 # QMI
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
+PRODUCT_PACKAGES += \
+    libjson
+
 # Sensors
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
