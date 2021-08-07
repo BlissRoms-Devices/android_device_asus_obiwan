@@ -89,11 +89,19 @@ $(RFS_MDM_TN_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /mnt/vendor/persist/hlos_rfs/shared $@/hlos
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 
+WIFI_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld
+$(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating WiFi firmware symlinks: $@"
+	@mkdir -p $@
+	$(hide) ln -sf /vendor/firmware/wlan/qca_cld/qca6390/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
+	$(hide) ln -sf /vendor/factory/wlan_mac.bin $@/wlan_mac.bin
+
 ALL_DEFAULT_INSTALLED_MODULES += \
     $(RFS_MDM_ADSP_SYMLINKS) \
     $(RFS_MDM_CDSP_SYMLINKS) \
     $(RFS_MDM_MPSS_SYMLINKS) \
     $(RFS_MDM_SLPI_SYMLINKS) \
     $(RFS_MDM_TN_SYMLINKS) \
+    $(WIFI_FIRMWARE_SYMLINKS)
 
 endif
