@@ -127,6 +127,9 @@ persist.radio.multisim.config=dsds
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 
+# Sensors
+persist.vendor.sensors.allow_non_default_discovery=true
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
