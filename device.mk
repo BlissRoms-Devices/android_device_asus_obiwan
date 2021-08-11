@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit from our proprietary files directory.
+$(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -363,9 +366,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
-
-# Vendor
-$(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
 
 # Verified Boot
 PRODUCT_COPY_FILES += \
