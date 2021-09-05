@@ -82,6 +82,9 @@ vendor.qcom.bluetooth.soc=hastings
 # DRM
 drm.service.enabled=true
 
+# Data
+persist.vendor.data.iwlan.enable=true
+
 # Display
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
