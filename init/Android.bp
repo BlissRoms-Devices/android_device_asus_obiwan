@@ -4,6 +4,12 @@
 //
 
 prebuilt_etc {
+    name: "fstab.asus",
+    src: "fstab.asus",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.qcom",
     src: "fstab.qcom",
     vendor: true,

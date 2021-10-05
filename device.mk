@@ -221,6 +221,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 PRODUCT_PACKAGES += \
+    fstab.asus \
     fstab.qcom \
     init.asus.rc \
     init.class_main.sh \

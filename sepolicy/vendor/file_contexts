@@ -1,0 +1,3 @@
+# Battery
+/batinfo(/.*)?                                            u:object_r:battery_file:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/batinfo    u:object_r:battery_block_device:s0

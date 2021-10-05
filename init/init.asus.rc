@@ -28,8 +28,16 @@ on boot
     chown system system /sys/class/sensors/psensor/write_reg
 
 on post-fs-data
+    # Battery
+    mount_all /vendor/etc/fstab.asus
+    restorecon_recursive /batinfo
+
     # Proximity
     write /sys/class/sensors/psensor/load_cal 1
+
+on charger
+    # Battery
+    mount_all /vendor/etc/fstab.asus --early
 
 service vendor.sensors-hal-2-1-multihal /vendor/bin/hw/android.hardware.sensors@2.1-service.multihal
     override
