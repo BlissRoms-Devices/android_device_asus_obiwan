@@ -17,35 +17,21 @@
 
 package org.blissroms.settings.asusparts;
 
-import android.app.Activity;
-import android.app.Fragment;
-import android.os.Bundle;
-import android.view.MenuItem;
 
-public class AsusPartsActivity extends Activity {
+import android.os.Bundle;
+
+
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
+
+public class AsusPartsActivity extends CollapsingToolbarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-
-        Fragment fragment = getFragmentManager().findFragmentById(android.R.id.content);
-        AsusParts mAsusPartsFragment;
-        if (fragment == null) {
-            mAsusPartsFragment = new AsusParts();
-            getFragmentManager().beginTransaction()
-                    .add(android.R.id.content, mAsusPartsFragment)
+        getFragmentManager().beginTransaction()
+                    .add(R.id.content_frame, new AsusParts())
                     .commit();
         }
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-}

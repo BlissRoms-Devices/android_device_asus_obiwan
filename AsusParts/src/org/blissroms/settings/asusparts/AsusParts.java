@@ -23,8 +23,6 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.ListPreference;
 import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceManager;
-import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
 import android.provider.Settings;
@@ -57,11 +55,11 @@ public class AsusParts extends PreferenceFragment implements
             }
         });
 
-        mGloveSwitch = (TwoStatePreference) findPreference(KEY_GLOVE_SWITCH);
+        mGloveSwitch =  findPreference(KEY_GLOVE_SWITCH);
         mGloveSwitch.setChecked(Settings.System.getInt(getContext().getContentResolver(),
         KEY_GLOVE_SWITCH, 1) != 0);
 
-        //mSwipeUpSwitch = (TwoStatePreference) findPreference(KEY_SWIPEUP_SWITCH);
+        //mSwipeUpSwitch =  findPreference(KEY_SWIPEUP_SWITCH);
         //mSwipeUpSwitch.setChecked(Settings.System.getInt(getContext().getContentResolver(),
         //KEY_SWIPEUP_SWITCH, 1) != 0);
 

@@ -39,7 +39,7 @@
     <application
         android:icon="@android:drawable/sym_def_app_icon"
         android:label="@string/asusparts"
-        android:theme="@style/Theme.Main">
+        android:theme="@style/Theme.SubSettingsBase">
 
         <activity
             android:name=".AsusPartsActivity"
@@ -107,7 +107,7 @@
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main"
+            android:theme="@style/Theme.SubSettingsBase"
             android:exported="false">
         </activity>
 

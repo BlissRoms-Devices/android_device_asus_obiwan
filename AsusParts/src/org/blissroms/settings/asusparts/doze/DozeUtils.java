@@ -45,6 +45,8 @@ public final class DozeUtils {
 
     static final String CATEG_PICKUP_SENSOR = "pickup_sensor";
     static final String CATEG_PROX_SENSOR = "proximity_sensor";
+	
+    static final String DOZE_ENABLE = "doze_enable";
 
     static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
     static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
