@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from instantnoodlep device
 $(call inherit-product, device/asus/obiwan/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := obiwan
 PRODUCT_MANUFACTURER := asus
 PRODUCT_MODEL := ASUS_I003D
-PRODUCT_NAME := lineage_obiwan
+PRODUCT_NAME := bliss_obiwan
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
