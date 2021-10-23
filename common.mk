@@ -23,6 +23,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/asus/sm8250-common/sm8250-common-vendor.mk)
 
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
