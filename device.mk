@@ -57,8 +57,8 @@ PRODUCT_COPY_FILES += \
     vendor/bliss/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.asus_kona
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch@1.0-service.asus_kona
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
