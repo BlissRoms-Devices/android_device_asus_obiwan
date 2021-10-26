@@ -1,0 +1,7 @@
+on fs
+    chown root system /sys/devices/platform/goodix_ts.0/test_keycode
+
+service fps_hal.asus_kona /system/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.asus_kona
+    class late_start
+    user system
+    group system input uhid

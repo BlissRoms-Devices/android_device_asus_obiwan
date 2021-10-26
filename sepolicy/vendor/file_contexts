@@ -25,4 +25,5 @@
 /sys/devices/virtual/sensors(/.*)?                                                                                                          u:object_r:vendor_sysfs_sensors:s0
 
 # Binaries
+/system/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.asus_kona 		u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/awk                                                                                 u:object_r:vendor_toolbox_exec:s0
