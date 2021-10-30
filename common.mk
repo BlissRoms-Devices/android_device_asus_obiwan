@@ -27,6 +27,7 @@ $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 $(call inherit-product, vendor/asus/sm8250-common/sm8250-common-vendor.mk)
 
 # VNDK
+PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # Overlays
