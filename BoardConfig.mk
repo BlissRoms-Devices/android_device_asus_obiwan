@@ -35,6 +35,10 @@ TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS :=$(DEVICE_PATH)/recovery
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_obiwan
+TARGET_RECOVERY_DEVICE_MODULES := libinit_obiwan
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-09-01
 
