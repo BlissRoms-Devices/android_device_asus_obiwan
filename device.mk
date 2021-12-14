@@ -81,6 +81,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
+# Authsecret
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0.vendor
+
 # Bluetooth
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
@@ -164,8 +168,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor \
+    android.hardware.gnss@2.1.vendor
+
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -199,6 +212,9 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -243,6 +259,14 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     kernel/asus/sm8250
 
+# Networking
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
@@ -274,6 +298,13 @@ PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 # Sensors
 PRODUCT_COPY_FILES += \
