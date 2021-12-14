@@ -18,6 +18,7 @@
 -include device/asus/sm8250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/asus/obiwan
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
