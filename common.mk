@@ -236,6 +236,10 @@ PRODUCT_PACKAGES += \
     libipanat:64 \
     liboffloadhal:64
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.asus_kona
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
