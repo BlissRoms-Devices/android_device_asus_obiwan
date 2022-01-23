@@ -288,6 +288,7 @@ PRODUCT_PACKAGES += \
     LineageSdkResObiwan \
     SettingsProviderResObiwan \
     SettingsResObiwan \
+    SystemUIResObiwan \
     TelephonyResCommon_Sys \
     WifiResCommon_Sys \
     WifiResTarget
