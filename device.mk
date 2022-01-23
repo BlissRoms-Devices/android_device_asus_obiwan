@@ -275,6 +275,7 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon_Sys \
     FrameworksResObiwan \
     FrameworksResTarget \
+    SettingsProviderResObiwan \
     TelephonyResCommon_Sys \
     WifiResCommon_Sys \
     WifiResTarget
