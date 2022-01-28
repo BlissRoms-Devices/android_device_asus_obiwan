@@ -287,6 +287,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     LineageSdkResObiwan \
     SettingsProviderResObiwan \
+    SettingsResObiwan \
     TelephonyResCommon_Sys \
     WifiResCommon_Sys \
     WifiResTarget
