@@ -26,6 +26,8 @@
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
 #include <vendor/goodix/hardware/biometrics/fingerprint/2.1/IGoodixFingerprintDaemon.h>
 
+#include "concurrent_queue.h"
+
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -79,6 +81,7 @@ private:
     std::mutex mClientCallbackMutex;
     sp<IBiometricsFingerprintClientCallback> mClientCallback;
     sp<IGoodixFingerprintDaemon> mGoodixFingerprintDaemon;
+    concurrent_queue<unsigned int> mCmdQueue;
     fingerprint_device_t *mDevice;
 };
 
