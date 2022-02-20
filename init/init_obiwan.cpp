@@ -55,14 +55,14 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 
 void vendor_load_properties()
 {
-    property_override("ro.build.description","redfin-user 11 SP1A.211105.003 7757856 release-keys");
-    property_override("ro.bootimage.build.fingerprint","google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys");
-    property_override("ro.build.fingerprint","google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys");
-    property_override("ro.odm.build.fingerprint","google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys");
-    property_override("ro.product.build.fingerprint","google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys");
-    property_override("ro.system.build.fingerprint","google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys");
-    property_override("ro.system_ext.build.fingerprint","google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys");
-    property_override("ro.vendor.build.fingerprint","google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys");
+    property_override("ro.build.description","redfin-user 12 SQ1A.220205.002 8010174 release-keys");
+    property_override("ro.bootimage.build.fingerprint","google/redfin/redfin:12/SQ1A.220205.002/8010174:user/release-keys");
+    property_override("ro.build.fingerprint","google/redfin/redfin:12/SQ1A.220205.002/8010174:user/release-keys");
+    property_override("ro.odm.build.fingerprint","google/redfin/redfin:12/SQ1A.220205.002/8010174:user/release-keys");
+    property_override("ro.product.build.fingerprint","google/redfin/redfin:12/SQ1A.220205.002/8010174:user/release-keys");
+    property_override("ro.system.build.fingerprint","google/redfin/redfin:12/SQ1A.220205.002/8010174:user/release-keys");
+    property_override("ro.system_ext.build.fingerprint","google/redfin/redfin:12/SQ1A.220205.002/8010174:user/release-keys");
+    property_override("ro.vendor.build.fingerprint","google/redfin/redfin:12/SQ1A.220205.002/8010174:user/release-keys");
     property_override("ro.oem_unlock_supported", "0");
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.boot.flash.locked", "1");
