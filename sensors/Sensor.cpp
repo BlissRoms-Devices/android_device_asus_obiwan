@@ -221,7 +221,7 @@ SysfsPollingOneShotSensor::SysfsPollingOneShotSensor(int32_t sensorHandle,
     mSensorInfo.name = "UDFPS Sensor";
     mSensorInfo.type =
         static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 1);
-    mSensorInfo.typeAsString = "org.lineageos.sensor.udfps";
+    mSensorInfo.typeAsString = "org.blissroms.sensor.udfps";
     mSensorInfo.maxRange = 2048.0f;
     mSensorInfo.resolution = 1.0f;
     mSensorInfo.power = 0;
@@ -321,6 +321,18 @@ void SysfsPollingOneShotSensor::interruptPoll() {
 
     char c = '1';
     write(mWaitPipeFd[1], &c, sizeof(c));
+}
+
+std::vector<Event> UdfpsSensor::readEvents() {
+    std::vector<Event> events;
+    Event event;
+    event.sensorHandle = mSensorInfo.sensorHandle;
+    event.sensorType = mSensorInfo.type;
+    event.timestamp = ::android::elapsedRealtimeNano();
+    event.u.data[0] = 540;
+    event.u.data[1] = 1761;
+    events.push_back(event);
+    return events;
 }
 
 }  // namespace implementation

@@ -113,6 +113,20 @@ class SysfsPollingOneShotSensor : public OneShotSensor {
     int mPollFd;
 };
 
+const std::string kFtsPath = "/sys/devices/platform/goodix_ts.0/";
+const std::string kFtsPathGesture = "/sys/devices/platform/goodix_ts.0/gesture";
+const std::string kFodPressedPath = kFtsPath + "fod_pressed";
+const std::string kFodModePath = kFtsPathGesture + "fp_wakeup";
+
+class UdfpsSensor : public SysfsPollingOneShotSensor {
+  public:
+    UdfpsSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
+        : SysfsPollingOneShotSensor(sensorHandle, callback, kFodPressedPath, kFodModePath) {}
+
+  protected:
+    virtual std::vector<Event> readEvents() override;
+};
+
 }  // namespace implementation
 }  // namespace subhal
 }  // namespace V2_1
