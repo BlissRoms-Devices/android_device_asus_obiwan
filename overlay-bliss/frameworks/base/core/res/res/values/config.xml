@@ -34,4 +34,7 @@
          non-zero. -->
     <integer name="config_defaultPeakRefreshRate">144</integer>
 
+    <!-- Default fod pressed color -->
+    <integer name="config_fod_pressed_color">0</integer>
+
 </resources>
