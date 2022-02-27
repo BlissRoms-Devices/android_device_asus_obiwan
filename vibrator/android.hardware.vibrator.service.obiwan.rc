@@ -1,0 +1,4 @@
+service vendor.obiwan.vibrator /vendor/bin/hw/android.hardware.vibrator.service.obiwan
+    class hal
+    user system
+    group system input
