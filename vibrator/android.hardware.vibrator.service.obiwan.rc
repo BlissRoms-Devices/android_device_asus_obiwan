@@ -1,3 +1,12 @@
+on post-fs
+    chown system system /sys/class/leds/vibrator/mem_play
+    chown system system /sys/class/leds/vibrator/gain
+    chown system system /sys/class/leds/vibrator/index
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/activate
+
+    write /sys/class/leds/vibrator/vmax 28
+
 service vendor.obiwan.vibrator /vendor/bin/hw/android.hardware.vibrator.service.obiwan
     class hal
     user system
