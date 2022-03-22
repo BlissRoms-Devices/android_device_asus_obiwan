@@ -89,3 +89,4 @@ genfscon proc /localHbm                                                         
 genfscon sysfs /devices/platform/goodix_ts.0/test_keycode                                       u:object_r:asus_display_sysfs:s0
 genfscon sysfs /devices/platform/goodix_ts.0/fod_pressed                       u:object_r:vendor_sysfs_sensors:s0
 genfscon sysfs /devices/platform/goodix_ts.0/gesture/fp_wakeup                 u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/goodix_ts.0/gesture/dclick                    u:object_r:vendor_sysfs_sensors:s0

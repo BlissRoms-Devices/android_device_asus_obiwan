@@ -352,6 +352,12 @@ std::vector<Event> SysfsPollingOneShotSensor::readEvents() {
     return events;
 }
 
+void FtsPollingOneShotSensor::writeEnable(bool enable) {
+    if (mEnableStream) {
+        mEnableStream << (enable ? '1' : '0') << std::flush;
+    }
+}
+
 }  // namespace implementation
 }  // namespace subhal
 }  // namespace V2_1

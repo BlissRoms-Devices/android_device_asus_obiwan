@@ -137,6 +137,31 @@ class UdfpsSensor : public SysfsPollingOneShotSensor {
               540, 1781) {}
 };
 
+class FtsPollingOneShotSensor : public SysfsPollingOneShotSensor {
+  public:
+    FtsPollingOneShotSensor(int32_t sensorHandle, ISensorsEventCallback* callback,
+                            const std::string& pollPath, const std::string& name,
+                            const std::string& typeAsString,SensorType type,
+                            int screenX, int screenY)
+        : SysfsPollingOneShotSensor(sensorHandle, callback, pollPath, kFtsPathGesture, name,
+                                    typeAsString, type, screenX, screenY) {
+    }
+
+    virtual void writeEnable(bool enable) override;
+};
+
+const std::string kDoubleTapPressedPath = kFtsPathGesture + "dclick";
+
+class DoubleTapSensor : public FtsPollingOneShotSensor {
+  public:
+    DoubleTapSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
+        : FtsPollingOneShotSensor(
+              sensorHandle, callback, kDoubleTapPressedPath, "Double Tap Sensor",
+              "org.blissroms.sensor.double_tap",
+              static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 2),
+              -1, -1) {}
+};
+
 }  // namespace implementation
 }  // namespace subhal
 }  // namespace V2_1
