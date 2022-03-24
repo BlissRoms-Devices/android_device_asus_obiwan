@@ -475,7 +475,7 @@ vendor/lib64/libxditk_ditBSP_JNI.so
 vendor/lib64/style.cng
 vendor/lib64/vendor.asus.bspcam@1.0-impl.so
 vendor/lib64/vendor.asus.bspcam@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|9a2cf5232f7dfc6982946c4192a84878e50c3f74|c1fa185e40a977782405579520261ae4f18712f5
 
 # Charger
 vendor/bin/hvdcp_opti
