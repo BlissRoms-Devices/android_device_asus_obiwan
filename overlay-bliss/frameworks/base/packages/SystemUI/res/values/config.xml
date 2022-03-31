@@ -32,4 +32,7 @@
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">135</integer>
 
+    <!-- Udfps HBM provider class name -->
+    <string name="config_udfpsHbmProviderComponent">com.android.systemui.biometrics.AsusUdfpsHbmProvider</string>
+
 </resources>
