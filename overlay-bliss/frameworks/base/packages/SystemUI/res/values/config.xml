@@ -27,8 +27,9 @@
             0 - GLOBAL HBM 
             1 - LOCAL HBM
     -->
-    <integer name="config_udfps_hbm_type">1</integer>
+    <integer name="config_udfpsHbmType">1</integer>
 
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">135</integer>
+
 </resources>
