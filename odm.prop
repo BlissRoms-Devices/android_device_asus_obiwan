@@ -1,3 +1,7 @@
+# Audio
+persist.vendor.audio.fluence.voicerec=true
+ro.vendor.audio.sdk.fluencetype=fluence
+
 # Bluetooth
 persist.vendor.bluetooth.modem_nv_support=true
 
