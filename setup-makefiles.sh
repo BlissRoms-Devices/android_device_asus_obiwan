@@ -24,8 +24,8 @@ source "${HELPER}"
 # Initialize the helper for common
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
-# Copyright headers and guards
-write_headers "obiwan tequila"
+# Warning headers and guards
+write_headers "heart zippo"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
@@ -33,16 +33,16 @@ write_makefiles "${MY_DIR}/proprietary-files.txt" true
 # Finish
 write_footers
 
-# Reinitialize the helper for device
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
+if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
+    # Reinitialize the helper for device
+    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
 
-# Copyright headers and guards
-write_headers
+    # Warning headers and guards
+    write_headers
 
-for BLOB_LIST in "${MY_DIR}"/../"${DEVICE}"/proprietary-files*.txt; do
     # The standard device blobs
-    write_makefiles "${BLOB_LIST}" true
-done
+    write_makefiles "${MY_DIR}/../${DEVICE}/proprietary-files.txt" true
 
-# Finish
-write_footers
+    # Finish
+    write_footers
+fi
