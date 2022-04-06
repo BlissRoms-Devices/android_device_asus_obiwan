@@ -3,9 +3,9 @@ vendor.bluetooth.a2dp.getSinkLatency    u:object_r:vendor_bluetooth_prop:s0
 vendor.camera.                u:object_r:vendor_camera_prop:s0
 vendor.goodix.                u:object_r:vendor_gx_fpd_prop:s0
 persist.vendor.nfc.           u:object_r:vendor_nfc_prop:s0
-vendor.gsm.sim1.present       u:object_r:exported3_radio_prop:s0
-vendor.gsm.sim2.present       u:object_r:exported3_radio_prop:s0
-vendor.tel.                   u:object_r:exported3_radio_prop:s0
-ro.vendor.csc.modemhash1      u:object_r:exported3_radio_prop:s0
-ro.vendor.csc.modemhash2      u:object_r:exported3_radio_prop:s0
+vendor.gsm.sim1.present       u:object_r:radio_control_prop:s0
+vendor.gsm.sim2.present       u:object_r:radio_control_prop:s0
+vendor.tel.                   u:object_r:radio_control_prop:s0
+ro.vendor.csc.modemhash1      u:object_r:radio_control_prop:s0
+ro.vendor.csc.modemhash2      u:object_r:radio_control_prop:s0
 vendor.thermal.               u:object_r:vendor_thermal_prop:s0
