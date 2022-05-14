@@ -60,6 +60,9 @@ BOARD_USES_ALSA_AUDIO := true
 # Bluetooth
 TARGET_USE_QTI_BT_STACK := true
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kona
 
