@@ -200,6 +200,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
     vendor.display.config@2.0
 
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
