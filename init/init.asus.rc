@@ -6,3 +6,27 @@
 
 on early-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_rt5683 audio_tfa9874 ec_i2c_interface ene_6k582_station ene_8k41_dock ene_8k41_power ml51fb9ae_inbox nct7802 station_goodix_touch station_key texfat tntfs
+
+on boot
+    # Light
+    chown system system /sys/class/sensors/lsensor/adc
+    chown system system /sys/class/sensors/lsensor/cal
+    chown system system /sys/class/sensors/lsensor/read_reg
+    chown system system /sys/class/sensors/lsensor/selection
+    chown system system /sys/class/sensors/lsensor/switch
+    chown system system /sys/class/sensors/lsensor/write_reg
+
+    # Proximity
+    chown system system /sys/class/sensors/psensor/hi_cal
+    chown system system /sys/class/sensors/psensor/inf_cal
+    chown system system /sys/class/sensors/psensor/load_cal
+    chown system system /sys/class/sensors/psensor/low_cal
+    chown system system /sys/class/sensors/psensor/proxm
+    chown system system /sys/class/sensors/psensor/read_reg
+    chown system system /sys/class/sensors/psensor/selection
+    chown system system /sys/class/sensors/psensor/switch
+    chown system system /sys/class/sensors/psensor/write_reg
+
+on post-fs-data
+    # Proximity
+    write /sys/class/sensors/psensor/load_cal 1
