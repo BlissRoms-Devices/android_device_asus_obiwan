@@ -53,8 +53,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/goodix_ts.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/goodix_ts.kl
 
 # Touch
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.touch@1.0-service.asus_kona
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.asus_kona
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
