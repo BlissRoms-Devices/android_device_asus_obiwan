@@ -328,6 +328,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # Trust HAL
 #PRODUCT_PACKAGES += \
 #    vendor.lineage.trust@1.0-service
