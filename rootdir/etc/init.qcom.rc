@@ -581,10 +581,10 @@ service tcpdump-warp /system/bin/netlog.sh
     disabled
     seclabel u:r:dumpstate:s0
 
-on property:persist.vendor.asus.netlog.enable=1
+on property:sys.boot_completed=1 && property:persist.vendor.asus.netlog.enable=1
 start tcpdump-warp
 
-on property:persist.vendor.asus.netlog.enable=0
+on property:sys.boot_completed=1 && property:persist.vendor.asus.netlog.enable=0
 stop tcpdump-warp
 
 #AS-K yujoe Workaround for unable to get dsi hndl issue+
@@ -731,6 +731,7 @@ service vendor.move_wifi_data /system/bin/move_wifi_data.sh
     oneshot
 
 service wigignpt /vendor/bin/wigignpt
+    interface vendor.qti.hardware.wigig.netperftuner@1.0::INetPerfTuner default
     class hal
     socket wigig/wigignpt stream 660 system wifi
     user system
