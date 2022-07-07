@@ -30,3 +30,6 @@
 
 # Lights
 /(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.asus_kona                           u:object_r:hal_light_default_exec:s0
+
+# Vibrator
+/sys/devices/platform/soc/990000\.i2c/i2c-3/3-005[ab]/leds/vibrator(/.*)?               u:object_r:sysfs_vibrator:s0
