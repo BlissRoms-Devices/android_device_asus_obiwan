@@ -31,6 +31,6 @@ cc_binary {
         "android.hardware.biometrics.fingerprint@2.1",
         "android.hardware.biometrics.fingerprint@2.2",
         "android.hardware.biometrics.fingerprint@2.3",
-        "//device/asus/sm8250-common:vendor.goodix.hardware.biometrics.fingerprint@2.1",
+        "//device/asus/obiwan:vendor.goodix.hardware.biometrics.fingerprint@2.1",
     ],
 }

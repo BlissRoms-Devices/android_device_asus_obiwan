@@ -20,11 +20,11 @@
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# HIDL 
+# HIDL
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/asus/sm8250-common/sm8250-common-vendor.mk)
+$(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
