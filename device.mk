@@ -26,6 +26,9 @@ $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
 
+# Device shipping level
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
