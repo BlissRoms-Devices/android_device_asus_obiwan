@@ -120,6 +120,11 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.kona
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_policy_configuration_ZS661KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio_policy_configuration_ZS661KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio_policy_volumes_ZS661KS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes_ZS661KS.xml
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
