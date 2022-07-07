@@ -216,6 +216,10 @@ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/dis
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.asus_kona
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
