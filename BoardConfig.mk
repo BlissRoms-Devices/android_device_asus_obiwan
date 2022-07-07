@@ -82,6 +82,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/asus/sm8250
+TARGET_KERNEL_CONFIG := vendor/obiwan_defconfig
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES := \
