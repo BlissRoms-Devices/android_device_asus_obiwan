@@ -273,16 +273,10 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    NfcNci \
-    Tag \
-    SecureElement \
+    android.hardware.nfc@1.2.vendor \
     com.android.nfc_extras \
-    libchrome.vendor \
-    ese_spi_nxp \
-    vendor.nxp.hardware.nfc@2.0.vendor \
-    vendor.nxp.nxpese@1.0.vendor \
-    vendor.nxp.nxpnfc@1.0.vendor \
-    vendor.nxp.nxpnfclegacy@1.0.vendor
+    NfcNci \
+    Tag
 
 # Net
 PRODUCT_PACKAGES += \

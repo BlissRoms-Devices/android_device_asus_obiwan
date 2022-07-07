@@ -1204,12 +1204,32 @@ vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
+vendor/bin/hw/android.hardware.nfc@1.2-service
+vendor/etc/init/android.hardware.nfc@1.2-service.rc
+vendor/etc/permissions/com.nxp.mifare.xml
 vendor/lib/hal_libnfc.so
+vendor/lib/ese_client.so
+vendor/lib/ese_spi_nxp.so
+vendor/lib/libpn553_fw.so
+vendor/lib/nfc_nci_nxp.so
+vendor/lib/vendor.nxp.eventprocessor@1.0.so
+vendor/lib/vendor.nxp.nxpese@1.0.so
+vendor/lib/vendor.nxp.nxpnfc@2.0.so
+vendor/lib/vendor.nxp.nxpnfclegacy@1.0.so
+vendor/lib64/libchrome.so
 vendor/lib64/hal_libnfc.so
+vendor/lib64/ese_client.so
+vendor/lib64/ese_spi_nxp.so
+vendor/lib64/nfc_nci_nxp.so
+vendor/lib64/vendor.nxp.eventprocessor@1.0.so
+vendor/lib64/vendor.nxp.nxpese@1.0.so
+vendor/lib64/vendor.nxp.nxpnfc@2.0.so
+vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 
 # NFC configs
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
+vendor/libnfc-nxp_RF.conf
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
