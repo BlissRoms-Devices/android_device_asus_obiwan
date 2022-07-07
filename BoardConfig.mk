@@ -241,6 +241,9 @@ BOARD_ROOT_EXTRA_FOLDERS := \
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2022-06-05
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
