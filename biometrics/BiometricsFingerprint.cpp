@@ -28,6 +28,12 @@
 #include <inttypes.h>
 #include <unistd.h>
 
+#define CMD_FINGER_DOWN 200001
+#define CMD_FINGER_UP 200003
+#define CMD_LIGHT_AREA_CLOSE 200000
+#define CMD_LIGHT_AREA_STABLE 200002
+#define CMD_PARTIAL_FINGER_DETECTED 200004
+
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -49,6 +55,7 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
     if (!mDevice) {
         ALOGE("Can't open HAL module");
     }
+    mGoodixFingerprintDaemon = IGoodixFingerprintDaemon::getService();
 }
 
 BiometricsFingerprint::~BiometricsFingerprint() {
@@ -71,10 +78,16 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 }
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
+    mGoodixFingerprintDaemon->sendCommand(CMD_FINGER_DOWN, {},
+                                                [](int, const hidl_vec<signed char>&) {});
+    mGoodixFingerprintDaemon->sendCommand(CMD_LIGHT_AREA_STABLE, {},
+                                                [](int, const hidl_vec<signed char>&) {});
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
+    mGoodixFingerprintDaemon->sendCommand(CMD_FINGER_UP, {},
+                                                [](int, const hidl_vec<signed char>&) {});
     return Void();
 }
 
