@@ -2801,8 +2801,8 @@ product/etc/permissions/UimGbaManager.xml
 -product/framework/uimgbamanagerlibrary.jar
 
 # RIL
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|75e8a824d368cd4172985c884796381327d950da
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml|620c9fa0047bb681e918af2d1e7a98c648f45fb7
 -system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
 -system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
 -system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
