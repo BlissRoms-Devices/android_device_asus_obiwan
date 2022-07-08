@@ -710,7 +710,6 @@ vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Fingerprint
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/firmware/goodix_9886_cfg_group.bin
 vendor/firmware/goodix_9886_config.cfg
 vendor/firmware/goodix_9886_config_station.cfg
