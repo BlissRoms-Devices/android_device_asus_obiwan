@@ -1,0 +1,3 @@
+-keep class org.blissroms.settings.asusparts.doze.* {
+  *;
+}
