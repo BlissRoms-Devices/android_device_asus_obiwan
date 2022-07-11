@@ -16,6 +16,7 @@
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.asus_kona"
 #define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.asus_kona"
 
+#include <android-base/file.h>
 #include <hardware/hw_auth_token.h>
 
 #include <android-base/properties.h>
@@ -33,6 +34,9 @@
 #define CMD_LIGHT_AREA_CLOSE 200000
 #define CMD_LIGHT_AREA_STABLE 200002
 #define CMD_PARTIAL_FINGER_DETECTED 200004
+
+#define TEST_KEYCODE_PATH "/sys/devices/platform/goodix_ts.0/test_keycode"
+#define FOD_WAKEUP_EVENT "33"
 
 namespace android {
 namespace hardware {
@@ -80,6 +84,7 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
     mGoodixFingerprintDaemon->sendCommand(CMD_FINGER_DOWN, {},
                                                 [](int, const hidl_vec<signed char>&) {});
+    android::base::WriteStringToFile(FOD_WAKEUP_EVENT, TEST_KEYCODE_PATH);
     mGoodixFingerprintDaemon->sendCommand(CMD_LIGHT_AREA_STABLE, {},
                                                 [](int, const hidl_vec<signed char>&) {});
     return Void();
