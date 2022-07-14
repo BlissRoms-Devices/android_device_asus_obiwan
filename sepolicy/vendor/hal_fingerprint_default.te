@@ -17,3 +17,4 @@ allow hal_fingerprint_default sysfs_battery_supply:file r_file_perms;
 set_prop(hal_fingerprint_default, vendor_gx_fpd_prop);
 
 allow hal_fingerprint hal_fingerprint:binder call;
+allow hal_fingerprint_default sysfs_touchscreen:file w_file_perms;
