@@ -38,6 +38,10 @@
 #define TEST_KEYCODE_PATH "/sys/devices/platform/goodix_ts.0/test_keycode"
 #define FOD_WAKEUP_EVENT "33"
 
+#define LOCAL_HBM_PATH "/proc/localHbm"
+#define LOCAL_HBM_ON "1"
+#define LOCAL_HBM_OFF "0"
+
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -85,12 +89,14 @@ Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, floa
     mGoodixFingerprintDaemon->sendCommand(CMD_FINGER_DOWN, {},
                                                 [](int, const hidl_vec<signed char>&) {});
     android::base::WriteStringToFile(FOD_WAKEUP_EVENT, TEST_KEYCODE_PATH);
+    android::base::WriteStringToFile(LOCAL_HBM_ON, LOCAL_HBM_PATH);
     mGoodixFingerprintDaemon->sendCommand(CMD_LIGHT_AREA_STABLE, {},
                                                 [](int, const hidl_vec<signed char>&) {});
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
+    android::base::WriteStringToFile(LOCAL_HBM_OFF, LOCAL_HBM_PATH);
     mGoodixFingerprintDaemon->sendCommand(CMD_FINGER_UP, {},
                                                 [](int, const hidl_vec<signed char>&) {});
     return Void();
