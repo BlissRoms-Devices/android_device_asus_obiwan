@@ -35,7 +35,6 @@ dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
 wifi.aware.interface=wifi-aware0
 vendor.qcom.bluetooth.soc=hastings
-ro.sf.lcd_density=420
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 vendor.audio_hal.period_size=192
 persist.vendor.audio.ambisonic.capture=false
