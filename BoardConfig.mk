@@ -129,9 +129,6 @@ TARGET_USES_QCOM_BSP := true
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
-# Treble
-BOARD_VNDK_VERSION := current
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
