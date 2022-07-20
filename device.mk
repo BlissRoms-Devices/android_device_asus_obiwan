@@ -29,10 +29,6 @@ $(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
 # Device shipping level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# VNDK
-PRODUCT_TARGET_VNDK_VERSION := 30
-PRODUCT_EXTRA_VNDK_VERSIONS := 30
-
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
