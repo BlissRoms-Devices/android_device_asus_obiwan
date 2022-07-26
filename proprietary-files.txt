@@ -2070,7 +2070,6 @@ vendor/etc/init/init.asus.osinfo.rc
 vendor/etc/init/init.asus.sp.rc
 vendor/etc/init/init.asus.storage.rc
 vendor/etc/init/init.asus.user.rc
-vendor/etc/init/init.aw8697.rc
 vendor/etc/init/init.embmssl_server.rc
 vendor/etc/init/init.goodixfp.rc
 vendor/etc/init/init.ifaa.rc
