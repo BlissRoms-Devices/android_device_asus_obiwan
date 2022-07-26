@@ -26,6 +26,11 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <permission
+        android:name="org.blissroms.settings.asusparts.touch.TRIGGER_SCREEN_OFF_GESTURE"
+        android:protectionLevel="signatureOrSystem" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
     <protected-broadcast android:name="org.blissroms.settings.asusparts.UPDATE_SETTINGS" />
@@ -81,7 +86,7 @@
             android:enabled="true"
             android:exported="false"
             android:label="BootCompletedReceiver">
-            <intent-filter>
+            <intent-filter android:priority="999999">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -98,6 +103,19 @@
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.Main"
             android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".touch.TouchscreenGestureSettings"
+            android:label="@string/touchscreen_gesture_settings_title">
+        </activity>
+
+        <activity
+            android:name=".touch.TouchGestureActivity"
+            android:permission="org.blissroms.settings.asusparts.touch.TRIGGER_SCREEN_OFF_GESTURE"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/touchscreen_gesture_settings_title">
         </activity>
 
     </application>

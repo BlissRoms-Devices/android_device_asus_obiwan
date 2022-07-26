@@ -37,13 +37,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
-        DozeUtils.checkDozeService(context);
-        FileUtils.setValue(AsusParts.GLOVE_PATH, Settings.System.getInt(context.getContentResolver(),
-                AsusParts.KEY_GLOVE_SWITCH, 1));
-        if (DEBUG) Log.d(TAG, "Glove switch = "+(Settings.System.getInt(context.getContentResolver(), AsusParts.KEY_GLOVE_SWITCH, 1))); 
-        FileUtils.setValue(AsusParts.SWIPEUP_PATH, Settings.System.getInt(context.getContentResolver(),
-                AsusParts.KEY_SWIPEUP_SWITCH, 1));
-        if (DEBUG) Log.d(TAG, "Swipe up switch = "+(Settings.System.getInt(context.getContentResolver(), AsusParts.KEY_SWIPEUP_SWITCH, 1)));        
+        DozeUtils.checkDozeService(context);     
     }
 
     private boolean hasRestoredTunable(Context context) {
