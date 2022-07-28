@@ -19,4 +19,7 @@
 
     <!-- Custom Doze Package -->
     <string name="config_customDozePackage">org.blissroms.settings.asusparts/org.blissroms.settings.asusparts.doze.DozeSettingsActivity</string>
+
+    <!-- Dynamic Refresh Rate Control -->
+    <bool name="config_supports_dynamic_refresh_rate_controls">true</bool>
 </resources>
