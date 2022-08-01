@@ -18,6 +18,9 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
 
+# Netmgr
+persist.vendor.data.mode=concurrent
+
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
