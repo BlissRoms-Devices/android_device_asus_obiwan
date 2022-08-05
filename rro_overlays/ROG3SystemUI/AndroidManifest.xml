@@ -4,10 +4,10 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.settings.bliss.rog3">
+    package="com.android.systemui.rog3">
 
     <overlay
         android:isStatic="true"
         android:priority="800"
-        android:targetPackage="com.android.settings" />
+        android:targetPackage="com.android.systemui" />
 </manifest>

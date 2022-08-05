@@ -317,11 +317,16 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
-    TetheringConfigOverlay \
-    WifiOverlay \
+    FrameworksResCommon \
     ROG3BlissFrameworks \
     ROG3BlissSystemUI \
     ROG3BlissSettings \
+    ROG3Frameworks \
+    ROG3SettingsProvider \
+    ROG3SystemUI \
+    TelephonyResCommon \
+    TetheringConfigOverlay \
+    WifiOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \

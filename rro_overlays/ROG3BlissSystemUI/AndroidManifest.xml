@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.systemui.rog3">
+    package="com.android.systemui.bliss.rog3">
 
     <overlay
         android:isStatic="true"
