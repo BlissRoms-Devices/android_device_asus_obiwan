@@ -38,5 +38,9 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Recovery
+PRODUCT_PACKAGES += \
+    goodix_9896_cfg_group.recovery
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29

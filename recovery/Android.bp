@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2022 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_firmware {
+    name: "goodix_9896_cfg_group.recovery",
+    filename_from_src: true,
+    src: "goodix_9896_cfg_group.bin",
+    recovery: true,
+}
