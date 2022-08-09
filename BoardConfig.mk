@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/asus/obiwan
+
 include build/make/target/board/BoardConfigMainlineCommon.mk
 
 # A/B
@@ -93,4 +95,5 @@ BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
