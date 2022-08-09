@@ -78,6 +78,7 @@ TARGET_KERNEL_CONFIG := vendor/ZS661KS-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/sm8250
 
 # Kernel Modules
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 TARGET_MODULE_ALIASES := \
     adsp_loader_dlkm.ko:audio_adsp_loader.ko \
     apr_dlkm.ko:audio_apr.ko \
