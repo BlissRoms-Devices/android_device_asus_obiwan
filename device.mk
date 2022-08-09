@@ -44,3 +44,6 @@ PRODUCT_PACKAGES += \
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Vendor
+$(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
