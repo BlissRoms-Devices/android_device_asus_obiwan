@@ -2,8 +2,15 @@
 ## are from ROG Phone 3 (31.0210.0210.236). OTAs to extract from can be found
 ## here: https://rog.asus.com/us/phones/rog-phone-3-model/helpdesk_download
 
+# FastCV
+-vendor/lib/libfastcvopt.so
+-vendor/lib64/libfastcvopt.so
+
 # Hotword Enrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
+# Thermal
+-vendor/lib64/libthermalclient.so
