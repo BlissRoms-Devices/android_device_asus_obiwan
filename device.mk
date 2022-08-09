@@ -19,6 +19,10 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    FrameworksResCommon_Sys \
+    TelephonyResCommon_Sys \
+    WifiResCommon_Sys
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
