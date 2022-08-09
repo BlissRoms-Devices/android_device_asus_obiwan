@@ -59,6 +59,9 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_SCREEN_DENSITY := 420
 
 # HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
+
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/manifest.xml
 
