@@ -16,7 +16,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.qcom.recovery.rc
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
