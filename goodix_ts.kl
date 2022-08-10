@@ -1,0 +1,8 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+key 33    PROG_RED      VIRTUAL
+key 22    PROG_GREEN    VIRTUAL
