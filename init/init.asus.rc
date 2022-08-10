@@ -1,0 +1,8 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_rt5683 audio_tfa9874 ec_i2c_interface ene_6k582_station ene_8k41_dock ene_8k41_power ml51fb9ae_inbox nct7802 station_goodix_touch station_key texfat tntfs
