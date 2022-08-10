@@ -46,6 +46,11 @@ PRODUCT_PACKAGES += \
     audio.primary.kona \
     audio.r_submix.default \
     audio.usb.default \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
     liba2dpoffload \
     libbatterylistener \
     libcomprcapture \
@@ -249,6 +254,8 @@ PRODUCT_PACKAGES += \
     init.qti.media.rc \
     init.qti.media.sh \
     libOmxCore \
+    libOmxVdec \
+    libOmxVenc \
     libavservices_minijail.vendor \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
