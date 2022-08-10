@@ -313,4 +313,8 @@
         <item>130</item> <!-- sensorRadius -->
     </integer-array>
 
+    <!-- The default intensity level for haptic feedback. See Settings.System.HAPTIC_FEEDBACK_INTENSITY
+         for more details on the constant values and meanings. -->
+    <integer name="config_defaultHapticFeedbackIntensity">3</integer>
+
 </resources>
