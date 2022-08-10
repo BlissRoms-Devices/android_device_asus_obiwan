@@ -5,6 +5,10 @@ ro.vendor.audio.sdk.fluencetype=fluence
 # Bluetooth
 persist.vendor.bluetooth.modem_nv_support=true
 
+# Camera
+vendor.camera.asus.system=1
+vendor.camera.expTimeMax=0
+
 # QC Value Addons
 ro.vendor.qti.va_odm.support=1
 
