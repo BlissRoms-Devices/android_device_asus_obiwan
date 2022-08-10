@@ -65,7 +65,16 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.qcom.recovery.rc
+    init.class_main.sh \
+    init.mdm.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.recovery.rc \
+    init.qcom.sh \
+    init.qti.dcvs.sh \
+    init.target.rc \
+    ueventd.qcom.rc
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
