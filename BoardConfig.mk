@@ -23,6 +23,9 @@ AB_OTA_PARTITIONS := \
     vendor \
     vendor_dlkm
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # AVB
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
