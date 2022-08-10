@@ -1,2 +1,8 @@
 # QC Value Addons
 ro.vendor.qti.va_odm.support=1
+
+# Radio
+persist.vendor.radio.add_power_save=1
+persist.vendor.radio.always_send_plmn=1
+persist.vendor.radio.data_ltd_sys_ind=1
+persist.vendor.radio.rat_on=none
