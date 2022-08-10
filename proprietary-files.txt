@@ -591,6 +591,52 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Display (OSS)
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmutils.so
+
+# Display (Pixelworks)
+vendor/bin/irisConfig
+vendor/etc/inparm/inparm_obiwan_pr/HDR_SCurve0810.png
+vendor/etc/inparm/inparm_obiwan_pr/inParm1.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm10.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm11.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm12.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm13.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm14.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm15.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm16.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm17.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm18.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm19.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm2.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm20.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm21.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm22.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm23.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm24.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm25.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm26.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm27.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm3.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm4.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm5.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm6.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm7.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm8.txt
+vendor/etc/inparm/inparm_obiwan_pr/inParm9.txt
+vendor/etc/irissoft_o.fw
+vendor/lib64/libirisService.so
+vendor/lib64/libpwiriscalibrate.so
+vendor/lib64/libpwirispq.so
+vendor/lib64/libpwirissoft.so
+vendor/lib64/libpwsnapdragoncolor.so
+vendor/lib64/libpwsoftirisPCS.so
+vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
+
 # FASTCV
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
