@@ -114,7 +114,8 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.3.vendor
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
@@ -399,6 +400,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator.service.obiwan
 
 # WFD
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 PRODUCT_PACKAGES += \
     libwfdaac_vendor
 
