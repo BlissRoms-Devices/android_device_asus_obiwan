@@ -148,6 +148,7 @@ persist.vendor.sensors.sync_request=true
 
 # SoC
 ro.soc.manufacturer=QTI
+ro.soc.model=SM8250
 
 # USB
 vendor.usb.diag.func.name=diag
