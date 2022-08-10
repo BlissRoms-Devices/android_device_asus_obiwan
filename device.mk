@@ -76,8 +76,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworksResCommon_Sys \
+    FrameworksResTarget \
     TelephonyResCommon_Sys \
-    WifiResCommon_Sys
+    WifiResCommon_Sys \
+    WifiResTarget
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
