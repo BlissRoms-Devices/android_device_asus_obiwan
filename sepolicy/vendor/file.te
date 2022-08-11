@@ -1,2 +1,11 @@
 # Battery
 type battery_file, file_type;
+
+# Camera
+type vendor_proc_camera, fs_type, proc_type;
+
+# Display
+type vendor_proc_display, fs_type, proc_type;
+
+# EVT
+type vendor_proc_evt, fs_type, proc_type;

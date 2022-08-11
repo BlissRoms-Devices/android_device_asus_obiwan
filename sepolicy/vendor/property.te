@@ -1,0 +1,8 @@
+# Fingerprint
+vendor_internal_prop(vendor_fingerprint_prop)
+
+# GPS
+vendor_internal_prop(vendor_gps_prop)
+
+# Thermal
+vendor_internal_prop(vendor_thermal_prop)

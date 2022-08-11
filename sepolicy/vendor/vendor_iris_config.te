@@ -1,0 +1,4 @@
+type vendor_iris_config, domain;
+type vendor_iris_config_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_iris_config)

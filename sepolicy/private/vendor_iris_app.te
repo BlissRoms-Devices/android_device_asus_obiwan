@@ -1,0 +1,11 @@
+app_domain(vendor_iris_app)
+net_domain(vendor_iris_app)
+binder_use(vendor_iris_app)
+
+allow vendor_iris_app activity_service:service_manager find;
+allow vendor_iris_app content_capture_service:service_manager find;
+allow vendor_iris_app sensorservice_service:service_manager find;
+allow vendor_iris_app game_service:service_manager find;
+
+allow vendor_iris_app system_app_data_file:dir create_dir_perms;
+allow vendor_iris_app system_app_data_file:file create_file_perms;

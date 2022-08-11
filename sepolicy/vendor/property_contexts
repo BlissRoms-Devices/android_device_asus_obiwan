@@ -1,0 +1,21 @@
+# Camera
+vendor.camera.    u:object_r:vendor_camera_prop:s0
+
+# Fingerprint
+vendor.fp.version.driver    u:object_r:vendor_fingerprint_prop:s0
+vendor.goodix.              u:object_r:vendor_fingerprint_prop:s0
+
+# GPS
+persist.vendor.asus.agps.    u:object_r:vendor_gps_prop:s0
+persist.vendor.asus.gps.     u:object_r:vendor_gps_prop:s0
+
+# Thermal
+vendor.thermal.    u:object_r:vendor_thermal_prop:s0
+
+# Radio
+persist.vendor.tel.        u:object_r:vendor_radio_prop:s0
+ro.vendor.csc.modemhash    u:object_r:vendor_radio_prop:s0
+vendor.tel.                u:object_r:vendor_radio_prop:s0
+
+# Sensors
+vendor.proximity.    u:object_r:vendor_sensors_prop:s0
