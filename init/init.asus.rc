@@ -16,6 +16,9 @@ on boot
     chown system system /sys/class/sensors/lsensor/switch
     chown system system /sys/class/sensors/lsensor/write_reg
 
+    # Gestures
+    chown system system /proc/driver/dclick
+
     # Proximity
     chown system system /sys/class/sensors/psensor/hi_cal
     chown system system /sys/class/sensors/psensor/inf_cal
