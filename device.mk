@@ -154,7 +154,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.common-V1-ndk_platform.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
@@ -162,11 +161,8 @@ PRODUCT_PACKAGES += \
     gralloc.kona \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
-    libmemutils \
     libqdMetaData \
     libqdMetaData.system \
-    libsdmcore \
-    libsdmutils \
     libtinyxml \
     lights.kona \
     memtrack.kona \
