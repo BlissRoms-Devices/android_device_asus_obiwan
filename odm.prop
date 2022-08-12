@@ -9,6 +9,14 @@ persist.vendor.bluetooth.modem_nv_support=true
 vendor.camera.asus.system=1
 vendor.camera.expTimeMax=0
 
+# Display
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.enable_async_powermode=0
+
+# Graphics
+debug.sf.enable_gl_backpressure=0
+persist.sys.sf.color_mode=1
+
 # QC Value Addons
 ro.vendor.qti.va_odm.support=1
 
