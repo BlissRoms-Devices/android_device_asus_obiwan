@@ -1,5 +1,7 @@
 # Audio
 persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio.speaker.prot.enable=false
+persist.vendor.audio.vbat.enabled=false
 ro.vendor.audio.sdk.fluencetype=fluence
 
 # Bluetooth
