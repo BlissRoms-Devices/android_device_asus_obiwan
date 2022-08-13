@@ -19,6 +19,10 @@ vendor.display.enable_async_powermode=0
 debug.sf.enable_gl_backpressure=0
 persist.sys.sf.color_mode=1
 
+# LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=15
+
 # QC Value Addons
 ro.vendor.qti.va_odm.support=1
 
