@@ -3234,7 +3234,7 @@
     </path>
 
     <path name="voice-speaker-vbat">
-        <path name="speaker-vbat-mono" />
+        <path name="voicemmode1-call speaker"/>
     </path>
 
     <path name="voice-speaker-2-vbat">
