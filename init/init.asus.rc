@@ -22,6 +22,9 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys11/restart_level RELATED
 
 on boot
+    # Fingerprint
+    chown system system /dev/goodix_fp
+
     # Light
     chown system system /sys/class/sensors/lsensor/adc
     chown system system /sys/class/sensors/lsensor/cal
@@ -48,6 +51,9 @@ on post-fs-data
     # Battery
     mount_all /vendor/etc/fstab.asus
     restorecon_recursive /batinfo
+
+    # Fingerprint
+    mkdir /data/vendor/goodix 0777 system system
 
     # Proximity
     write /sys/class/sensors/psensor/load_cal 1
