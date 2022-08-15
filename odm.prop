@@ -6,6 +6,8 @@ ro.vendor.audio.sdk.fluencetype=fluence
 
 # Bluetooth
 persist.vendor.bluetooth.modem_nv_support=true
+persist.vendor.qcom.bluetooth.enable.swb=false
+persist.vendor.qcom.bluetooth.enable.swbpm=false
 
 # Camera
 vendor.camera.asus.system=1
