@@ -68,7 +68,6 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libspkrprot \
     libssrec \
-    libvolumelistener \
     sound_trigger.primary.kona:32
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8250/audio
