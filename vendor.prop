@@ -7,7 +7,6 @@ ro.opengles.version=196610
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
-persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.audio.avs.afe_api_version=2
 persist.vendor.audio.bcl.enabled=true
 persist.vendor.audio.fluence.speaker=true
