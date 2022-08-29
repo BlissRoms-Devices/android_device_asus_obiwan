@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/asus/obiwan/device.mk)
 
-# Inherit from the Lineage configuration.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from the bliss configuration.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := obiwan
 PRODUCT_MANUFACTURER := asus
 PRODUCT_MODEL := ASUS_I003DD
-PRODUCT_NAME := lineage_obiwan
+PRODUCT_NAME := bliss_obiwan
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
