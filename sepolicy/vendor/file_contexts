@@ -13,7 +13,7 @@
 /dev/goodix_fp                                                                                    u:object_r:fingerprint_device:s0
 
 # Lights
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.obiwan    u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.obiwan     u:object_r:hal_light_default_exec:s0
 
 # Sensors
 /dev/asusLightSensor    u:object_r:sensors_device:s0

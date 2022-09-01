@@ -1,24 +1,16 @@
-//
-// Copyright (C) 2022 The LineageOS Project
-// SPDX-License-Identifier: Apache-2.0
-//
-
 cc_binary {
-    name: "android.hardware.light@2.0-service.obiwan",
-    defaults: ["hidl_defaults"],
-    init_rc: ["android.hardware.light@2.0-service.obiwan.rc"],
-    vintf_fragments: ["android.hardware.light@2.0-service.obiwan.xml"],
+    name: "android.hardware.lights-service.obiwan",
     relative_install_path: "hw",
+    init_rc: ["lights-obiwan.rc"],
+    vintf_fragments: ["lights-obiwan.xml"],
     vendor: true,
-    srcs: [
-        "Light.cpp",
-        "service.cpp",
-    ],
     shared_libs: [
         "libbase",
-        "libhardware",
-        "libhidlbase",
-        "libutils",
-        "android.hardware.light@2.0",
+        "libbinder_ndk",
+        "android.hardware.light-V1-ndk",
+    ],
+    srcs: [
+        "Lights.cpp",
+        "main.cpp",
     ],
 }
