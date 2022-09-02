@@ -62,6 +62,7 @@ BOARD_USES_ALSA_AUDIO := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+BOARD_HAVE_BLUETOOTH_QCOM := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kona
@@ -183,6 +184,12 @@ TARGET_BOARD_PLATFORM := kona
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := /proc/driver/dclick
+
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
