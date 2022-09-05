@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from ROG Phone 3 (31.0210.0210.236). OTAs to extract from can be found
+## are from ROG Phone 3 (31.0210.0210.243). OTAs to extract from can be found
 ## here: https://rog.asus.com/us/phones/rog-phone-3-model/helpdesk_download
 
 # ADSPRPC
