@@ -14,6 +14,9 @@ $(call inherit-product, device/asus/obiwan/device.mk)
 # Inherit from the bliss configuration.
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := obiwan
 PRODUCT_MANUFACTURER := asus
