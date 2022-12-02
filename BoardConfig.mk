@@ -122,6 +122,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := vendor/obiwan_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/sm8250
 TARGET_KERNEL_CLANG_VERSION := r416183b1
+TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
