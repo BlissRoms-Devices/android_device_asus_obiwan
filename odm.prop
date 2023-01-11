@@ -38,3 +38,4 @@ ril.subscription.types=RUIM,RUIM
 
 # USB
 vendor.usb.product_string=ROG Phone 3
+persist.vendor.usb.controller.default=a800000.dwc3
