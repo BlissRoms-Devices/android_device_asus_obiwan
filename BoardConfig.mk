@@ -84,17 +84,17 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/asus_framework_matrix.xml \
+    $(DEVICE_PATH)/vintf/asus_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/bliss/config/device_framework_matrix.xml \
     vendor/nxp/nfc/vendor_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
-    $(DEVICE_PATH)/asus_manifest.xml \
-    $(DEVICE_PATH)/manifest.xml
+    $(DEVICE_PATH)/vintf/asus_manifest.xml \
+    $(DEVICE_PATH)/vintf/manifest.xml
 
 DEVICE_MATRIX_FILE := \
-    $(DEVICE_PATH)/compatibility_matrix.xml
+    $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 
 # Hacks
 BUILD_BROKEN_DUP_RULES := true
