@@ -3,12 +3,12 @@
    "remote":      "github",
    "repository":  "BlissRoms-Devices/android_kernel_asus_sm8250",
    "target_path": "kernel/asus/sm8250",
-   "revision":    "typhoon"
+   "branch":    "typhoon"
  },
  {
    "remote":      "github",
    "repository":  "BlissRoms-Devices/proprietary_vendor_asus",
    "target_path": "vendor/asus",
-   "revision":    "typhoon"
+   "branch":    "typhoon"
  }
 ]
