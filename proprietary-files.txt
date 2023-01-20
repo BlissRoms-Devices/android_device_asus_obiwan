@@ -613,13 +613,6 @@ vendor/firmware/goodix_9896_firmware.bin
 vendor/firmware/goodix_cfg_station_9886.bin
 vendor/firmware/goodix_cfg_station_9896.bin
 
-# Display (OSS)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
-vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmutils.so
-
 # FASTCV
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so

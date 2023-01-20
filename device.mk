@@ -172,6 +172,10 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
+    libsdmcore \
+    libsdmutils \
+    libtinyxml \
+    libvulkan \
     memtrack.kona \
     vendor.display.config@1.0 \
     vendor.display.config@1.11.vendor \
