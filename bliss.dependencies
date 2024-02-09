@@ -7,8 +7,8 @@
  },
  {
    "remote":      "github",
-   "repository":  "BlissRoms-Devices/proprietary_vendor_asus",
-   "target_path": "vendor/asus",
+   "repository":  "BlissRoms-Devices/proprietary_vendor_asus_obiwan",
+   "target_path": "vendor/asus/obiwan",
    "branch":    "universe"
  }
 ]
