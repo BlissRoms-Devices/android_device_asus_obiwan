@@ -153,6 +153,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.frameworks.sensorservice@1.0.vendor \
+    libexif.vendor \
+    libpng.vendor \
 
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
@@ -357,6 +359,7 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor
 
@@ -365,7 +368,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.secure_element@1.2.vendor \
+    libcurl.vendor \
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -386,6 +390,10 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Storage
 PRODUCT_CHARACTERISTICS := nosdcard
+
+# SQLite
+PRODUCT_PACKAGES += \
+    libsqlite.vendor
 
 # Telephony
 PRODUCT_COPY_FILES += \
