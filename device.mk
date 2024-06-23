@@ -7,6 +7,9 @@
 # Inherit from our proprietary files directory.
 $(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
