@@ -58,3 +58,11 @@ genfscon sysfs /devices/platform/soc/a600000.ssusb/wakeup u:object_r:sysfs_wakeu
 genfscon sysfs /devices/platform/soc/1c10000.qcom,pcie/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:richtek,rt-charger/power_supply/rt-chg/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:station_keys_asus/wakeup u:object_r:sysfs_wakeup:s0
+
+# Wakeup Nodes 
+genfscon sysfs /devices/platform/soc/9800000.qcom,npu/wakeup/wakeup56 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/98c000.i2c/i2c-2/2-001a/wakeup/wakeup90 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/0306_02.01.00/wakeup/wakeup104 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/wakeup/wakeup15 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:asustek_lid/wakeup/wakeup33 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_uc/wakeup/wakeup13 u:object_r:sysfs_wakeup:s0
