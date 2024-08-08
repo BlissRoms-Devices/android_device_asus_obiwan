@@ -8,7 +8,7 @@ genfscon proc /driver/glove                                  u:object_r:vendor_p
 genfscon proc /lcd_stage                                     u:object_r:vendor_proc_display:s0
 genfscon proc /lcd_unique_id                                 u:object_r:vendor_proc_display:s0
 genfscon proc /localHbm                                      u:object_r:vendor_proc_display:s0
-genfscon sysfs /devices/platform/goodix_ts.0/test_keycode    u:object_r:vendor_proc_display:s0
+genfscon sysfs_type /devices/platform/goodix_ts.0/test_keycode    u:object_r:vendor_proc_display:s0
 
 # EVT
 genfscon proc /asusevtlog    u:object_r:vendor_proc_evt:s0
