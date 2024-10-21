@@ -469,6 +469,7 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 PRODUCT_PACKAGES += \
+    android.media.audio.common.types-V2-cpp \
     libwfdaac_vendor
 
 # WiFi
