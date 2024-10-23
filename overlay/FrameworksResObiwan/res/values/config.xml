@@ -80,6 +80,9 @@
         <item>-1</item>
     </integer-array>
 
+    <!-- default refresh rate in the zone defined by birghtness and ambient thresholds -->
+    <integer name="config_defaultRefreshRateInZone">60</integer>
+
     <!-- Array of desired screen brightness in nits corresponding to the lux values
          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
          config_screenBrightnessMaximumNits, the display brightness is defined as the measured
